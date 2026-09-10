@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="navbar">
+
+        <div class="logo">
+            Movie Site
+        </div>
+
+        <nav>
+            <button id="homeBtn">Home</button>
+            <button id="watchlistBtn">Watch-List</button>
+            <button id="watchlistBtn">Watchlist <span id="watchlistCount">0</span> </button>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discovery Your Next Movie</h1>
+            <p>
+                Search fo moive and save your favorite to your watchlist.
+            </p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchBtn">Search</button>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <div class="section-header">
+            <h2 id="sectionTitle"> Popular Movies</h2>
+        </div>
+
+        <div id="loading" class="loading">
+            Loading movies...
+        </div>
+
+        <div id="errorMessage" class="error"></div>
+        
+        <section id="movieContainer" class="movie-grid">
+
+        
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
